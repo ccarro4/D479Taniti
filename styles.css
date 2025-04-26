@@ -8,7 +8,7 @@
 
 
 :root {
-    --sansFontFamily: "Century Gothic", Helvetica, Arial, "Meiryo UI", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    --sansFontFamily: 'Arial', "Meiryo UI", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 body {
@@ -17,9 +17,9 @@ body {
     display: block;
     justify-content: center;
     align-items: center;
-    font-size: 22px;
-    font-family: "Century Gothic", "Arial", sans-serif;
-    color: #a28089;
+    font-size: medium;
+    font-family: "Arial", sans-serif;
+    color: #FAAA47;
 }
 
 .center-img {
@@ -27,6 +27,10 @@ body {
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove inline display */
     margin: 0 auto; /* Center block element */
+}
+
+.italic-text {
+    font-style: italic;
 }
 
 
@@ -42,10 +46,15 @@ body {
     flex-direction: column!important;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     height: 100%;
     width: auto;
-   margin-right: 35px;
+    margin-right: 7px;
 }
 
 #MainText {
@@ -55,6 +64,7 @@ body {
 }
 
 h1 {
+    font-family: 'Calibri';
     font-size: 2rem;
     font-weight: 551;
     line-height: 1.4;
@@ -64,6 +74,7 @@ h1 {
 }
 
 h2 {
+    font-family: 'Calibri';
     font-size: 20px;
     line-height: 0;
     color: #faf5e4;
@@ -72,31 +83,36 @@ h2 {
 }
 
 h3 {
-    font-size: 21px;
+    font-family: 'Calibri';
+    font-size: 20px;
     line-height: 0;
-    color: #faf5e4;
+    color: #3bcee2;
     margin-left: 25px;
     margin-right: 25px;
+    text-align-last: center;
 }
 
 a:link {
     color: antiquewhite;
-    font-size: small;
 }
 
 a:visited {
    color: burlywood;
-    font-size: small;
 }
 
 a:hover {
     color: cornsilk;
-    font-size: small;
 }
 
 a:active {
     color: burlywood;
-    font-size: small;
+}
+
+.special-link {
+    color: #3bcee2;
+    text-decoration: none;
+    font-size: 20px;
+    text-align-last: center;
 }
 
 .article {
@@ -111,10 +127,18 @@ p {
 }
 
 .article-title {
+    font-family: 'Calibri';
     color: #3bcee2;
     font-size: 14px;
     text-align: center;
     font-weight: bold;
+}
+
+.alt-p {
+    color: #3bcee2;
+    margin-bottom: 4px;
+    margin-top: 0;
+    margin-left: 5px;
 }
 
 .settings-table {
@@ -126,6 +150,13 @@ p {
 .settings-table th, .settings-table td {
     padding: 8px;
     text-align: left;
+}
+
+blockquote {
+    font-style: italic;
+    font-size: small;
+    color: #3bcee2;
+    margin-right: 5px;
 }
 
 .bordered-row {
@@ -147,10 +178,11 @@ li {
 }
 
 .primary-button {
-    width: 200px;
-    height: 200px;
+    width: 96px;
+    height: 30px;
     background: linear-gradient(90deg, #FAAA47 0%, #FA1801 100%);
-    font-family: "MS PGothic" ;
+    font-family: "Calibri" ;
+    font-style: bold;
     background-size: 200% 200%;
     border-radius: 5px;
     border: none;
