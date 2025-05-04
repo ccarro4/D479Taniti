@@ -8,7 +8,7 @@
 
 
 :root {
-    --sansFontFamily: 'Arial', "Meiryo UI", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    --sansFontFamily: "Arial", "Meiryo UI", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 
 body {
@@ -175,6 +175,11 @@ ul {
 
 li {
     margin-bottom: 25px;
+}
+
+b {
+    font-style: bold;
+    color: #3bcee2
 }
 
 .primary-button {
